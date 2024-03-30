@@ -1,0 +1,278 @@
+.divs{
+  border: 2px solid black;
+  width: 60%;
+  margin-left: 15%;
+  margin-top: 5%;
+  
+}
+.divs h1{
+  text-align: center;
+  background-color: #65aa70;
+}
+.divs ol{
+  margin-top: 4%;
+  margin-left: 6%;
+  margin-bottom: 5%;
+}
+.divs ol li{
+  background-color: white;
+}
+
+.divs h2{
+  margin-left: 1%;
+  margin-top: 2%;
+}
+.divs h3{
+  margin-left:2%;
+}
+.divs img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  margin-top: 4%;
+}
+.divs p{
+  margin-left: 3%;
+  margin-top: 4%;
+}
+.tables{
+  width: 100%;
+}
+.tables td{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 1%;
+}
+.tables th{
+  border: 1px solid #131212;
+  background-color: #aa6565;
+  padding: 1%;
+}
+.tables tr:nth-child(even) {
+  background-color: #dddddd;
+}
+/* .................nav................ */
+*{
+    padding: 0;
+    margin: 0;
+} 
+ .flex-container{
+    display: flex;
+    flex-direction: row;
+}
+.navul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #292828;
+    width: 70%;
+    
+  } 
+  .navul li {
+    float: left;
+    border: 0.1px  solid   white ;
+    border-top-style:none;
+    border-bottom-style:none;
+    border-left-style:none;
+    padding: 2.46%;
+    padding-left: 6.51%;
+    position: relative;
+    
+  } 
+  li a {
+    display: block;
+    color: rgb(243, 241, 241);
+    align-items: center;
+    display: flex;
+  justify-content: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+   li:hover {
+    background-color: #65aa70;
+  }
+  li:active {
+    background-color: #aa6565;
+  } 
+  .navlogo{
+    background-color: #292828;
+    overflow: hidden;
+    width: 30%;
+  }
+  .navlogo h1{
+    float: left;
+  }
+  .red{
+    color: red;
+   margin: 1.5% 6% 0% 2.5% ;
+  }
+  .green{
+    color: green;
+    margin: 1.5% 0.3% 0% 1.5% ;
+  }
+  /* -------------------home================= */
+  .mainpic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  } 
+  .pi{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+  .pi h1{
+    text-align: center;
+  }
+  hr{
+    border: 1px solid rgb(8, 8, 8);
+  }
+  
+ .pi table{
+    width: 120%;
+    margin-top: 5%;
+  }
+  .pi table tr td {
+    width: 34%;
+  }
+  .scheduleh{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    
+  }
+  .scheduleh h1{
+    text-align: center;
+  }
+  .scheduleh table {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  .scheduleh table tr{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 99%;
+    
+  }
+  .scheduleh table td{
+    border-right: 2px solid rgb(8, 8, 8);
+    border-left: 2px solid rgb(8, 8, 8);
+    height: 100%;
+    width: 100%;
+    border-radius: 30%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+    
+  }
+  .scheduleh table td h1{
+     font-size:73%;
+  }
+  .teamlogo{
+    width: 31%;
+    height: 100%;
+  }
+  .stats h1 {
+    text-align: center;
+  }
+  .stats
+  { width:60%; margin-left:20%; margin-right:20%;  }
+  .stats td {
+    border: 1px solid black;
+    padding: 1%;
+    text-align: center;
+  }
+  .stats th{
+    border: 1px solid black;
+    padding: 1%;
+    background-color: #65aa70;
+  }
+  .team{
+    width: 64%;
+  }
+  .date{
+    width: 12%;
+  }
+  .goals{
+    width: 7%;
+  }
+  .win{
+    width: 9%;
+  }
+  .crgoals{
+    width: 7%;
+  }
+  .stats tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  /* ------------------------- */
+  .news h1 {
+    text-align: center;
+  }
+  .news
+  { width:60%; margin-left:20%; margin-right:20%;  }
+  
+  .news td{
+    border: 1px solid black;
+    padding: 1%;
+  }
+  .news th{
+    border: 1px solid black;
+    padding: 1%;
+    background-color: #aa6565;
+  }
+  .teamnews{
+    width:719px;
+    text-align: left;
+  }
+  .datenews{
+    width: 12%;
+    text-align: center;
+  }
+  .news tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  .teamnewsinput{
+    width: 100%;
+    height: 100%;
+  }
+  .news button,.stats button ,.btn{
+    display: inline-block;
+    height: 42px;
+    background-color: #65aa70;
+    margin-top: 3%;
+    width: 10%;
+
+  }
+  .stats tr td input{
+    width: 100%;
+    
+  }
+ .team input{
+    width: 123px;
+  }
+  .time{
+    width: 100%;
+  }
+  .teamname{
+    font-size: 18px;
+    text-align: left;
+    display: flex;
+  }
