@@ -79,7 +79,7 @@ useEffect(() => {
       {uploadedData.map((data,index) => (
 
       <tr key={index}><td><img src={`http://localhost:3000/${data.image1}`} alt='team logo' className='teamlogo'/>
-       <h1>{data.image1}</h1>
+       <h1>{data.teams}</h1>
       <img src={`http://localhost:3000/${data.image2}`} alt='team logo opposite' className='teamlogo'/></td></tr>
       
       ))}

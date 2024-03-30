@@ -8,7 +8,7 @@ const multer=require('multer');
 const app= express();
 app.use(express.json());
 app.use(cors());
-app.use(express.static('public'));
+app.use(express.static('uploads'));
 
 con.connect((err) => {
     if (err) {
@@ -82,8 +82,10 @@ const upload = multer({ storage: multer.diskStorage({
 //--------image upload
 app.post('/upload', upload.fields([{ name: 'image1', maxCount: 1 }, { name: 'image2', maxCount: 1 }]), (req, res) => {
   const { text } = req.body;
-  const imagePath1 = req.files['image1'][0].path;
+  const imagePath1 = req.files['image1'][0].path.split('uploads/');
   const imagePath2 = req.files['image2'][0].path;
+
+  console.log({imagePath1, imagePath2})
 
   const sql = 'INSERT INTO schedule (image1,teams , image2) VALUES (?, ?, ?)';
   con.query(sql, [ imagePath1, text, imagePath2], (err, result) => {
