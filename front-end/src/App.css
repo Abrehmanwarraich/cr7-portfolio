@@ -148,7 +148,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 60%;
-    
+   
   }
   .scheduleh h1{
     text-align: center;
@@ -157,7 +157,13 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent items from wrapping to the next line */
+    width: 800px; /* Set a fixed width for the container */
+  }
+  .scheduleh table tbody {
+    display: flex;
+    
   }
   .scheduleh table tr{
     margin-left: auto;
@@ -165,7 +171,7 @@
     width: 100%;
     text-align: center;
     align-items: center;
-    display: flex;
+    display: inline-block;
     justify-content: center;
     height: 99%;
     
@@ -176,9 +182,9 @@
     height: 100%;
     width: 100%;
     border-radius: 30%;
-    align-items: center;
+    /* align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: center; */
     
     
   }
@@ -187,7 +193,6 @@
   }
   .teamlogo{
     width: 31%;
-    height: 100%;
   }
   .stats h1 {
     text-align: center;

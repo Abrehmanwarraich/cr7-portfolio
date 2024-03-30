@@ -82,9 +82,8 @@ const upload = multer({ storage: multer.diskStorage({
 //--------image upload
 app.post('/upload', upload.fields([{ name: 'image1', maxCount: 1 }, { name: 'image2', maxCount: 1 }]), (req, res) => {
   const { text } = req.body;
-  const imagePath1 = req.files['image1'][0].path.split('uploads/');
-  const imagePath2 = req.files['image2'][0].path;
-
+  const imagePath1 = req.files['image1'][0].filename;
+const imagePath2 = req.files['image2'][0].filename;
   console.log({imagePath1, imagePath2})
 
   const sql = 'INSERT INTO schedule (image1,teams , image2) VALUES (?, ?, ?)';

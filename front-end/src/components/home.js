@@ -76,9 +76,9 @@ useEffect(() => {
       <h1>Schedule</h1><br/><hr/>
       <table><br/>
       <tbody>
-      {uploadedData.map((data,index) => (
+      {uploadedData.map((data) => (
 
-      <tr key={index}><td><img src={`http://localhost:3000/${data.image1}`} alt='team logo' className='teamlogo'/>
+      <tr><td><img src={`http://localhost:3000/${data.image1}`} alt='team logo' className='teamlogo'/>
        <h1>{data.teams}</h1>
       <img src={`http://localhost:3000/${data.image2}`} alt='team logo opposite' className='teamlogo'/></td></tr>
       
